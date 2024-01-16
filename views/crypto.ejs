@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Crypto Prices</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <header></header>
-    <div class="crypto-container">
-      <% cryptocurrencies.forEach(crypto => { %>
-      <div class="crypto-card">
-        <h2><%= crypto.name %></h2>
-        <p>Symbol: <%= crypto.symbol %></p>
-        <p>Price: $<%= crypto.price %></p>
+    <div class="container">
+      <div class="search">
+        <input
+          type="text"
+          name="searchbar"
+          placeholder="currency symbol...."
+          required
+        />
+        <button><i class="material-icons">search</i></button>
       </div>
-      <% }); %>
     </div>
   </body>
 </html>

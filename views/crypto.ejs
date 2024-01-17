@@ -12,14 +12,24 @@
   </head>
   <body>
     <div class="container">
-      <div class="search">
-        <input
-          type="text"
-          name="searchbar"
-          placeholder="currency symbol...."
-          required
-        />
-        <button><i class="material-icons">search</i></button>
+      <form method="post">
+        <div class="search">
+          <input
+            type="text"
+            name="searchbar"
+            placeholder="currency symbol...."
+            required
+          />
+          <button><i class="material-icons">search</i></button>
+        </div>
+      </form>
+
+      <div class="symbol">
+        <h3>Symbol:- <%= locals.symbols %></h3>
+      </div>
+
+      <div class="price">
+        <h3>Price:- <%= locals.prices %></h3>
       </div>
     </div>
   </body>
